@@ -142,8 +142,8 @@ try:
     m2.metric("MAE", f"{metrics['MAE (deaths)']:,.1f} deaths")
     m3.metric("RMSE", f"{metrics['RMSE (deaths)']:,.1f} deaths")
     st.caption(
-        "Metrics are calculated on a held-out test split. Death counts can be highly skewed, "
-        "so inspect errors on severe events separately before drawing conclusions."
+        "Metrics are calculated on a held-out test split Death counts can be highly skewed, "
+        
     )
 
     st.divider()
@@ -204,8 +204,7 @@ try:
         st.metric("Predicted estimated deaths", f"{estimate:,.0f}")
         st.warning(
             "This is a statistical estimate based on historical records, not a reliable standalone "
-            "prediction of future fatalities. Actual outcomes depend on exposure, vulnerability, "
-            "warning systems, response capacity, and many factors not represented here."
+            
         )
 
     st.divider()
